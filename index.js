@@ -1,7 +1,9 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-const generateSVG = require('./lib/shapes');
+const { generateSVG } = require('./lib/shapes');
 
+
+//prompt for user input to generate svg logo
 inquirer
     .prompt([
         {
