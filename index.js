@@ -27,7 +27,12 @@ inquirer
         }
     ])
     .then(answers => {
+        //retrieves answers provided by user
         const { text, textColor, shape, shapeColor } = answers;
+
+        //calls generateSVG function and creates file based on user input
         generateSVG(text, textColor, shape, shapeColor);
+
+        //prints message confirmt that the SVG file has been created
         console.log(`Generated logo.svg`);
     });
